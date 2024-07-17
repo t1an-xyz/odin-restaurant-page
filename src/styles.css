@@ -1,0 +1,130 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background: url('./images/banner.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 30%;
+}
+
+.hero-tint {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-tint > * {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-tint > h1 {
+    font-size: 64px;
+}
+
+.hero-tint > p {
+    font-size: 24px;
+}
+
+.hero-tint > p.attribution {
+    font-size: 16px;
+    color: #ccc;
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+p.attribution > a {
+    color: #ccc;
+}
+
+nav button {
+    background-color: transparent;
+    border: 0px solid;
+    font-size: 16px;
+    color: white;
+}
+
+nav button:hover {
+    cursor: pointer;
+
+}
+
+nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 40px;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    gap: 10px;
+}
+
+.content {
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: 200px;
+    padding: 40px 5px;
+    transition: all 0.5s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content {
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 5px;
+    font-size: 12px;
+    flex: 0 0 auto;
+}
+
+footer > p {
+    max-width: 60rem;
+    margin: auto;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.menu-item {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.visible {
+    opacity: 1;
+}
